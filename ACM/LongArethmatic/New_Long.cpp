@@ -99,7 +99,7 @@ void mult(lnum & a, int b) {
         a.pop_back();
 }
  
-void div(lnum a, int b) {
+int div(lnum a, int b) {
     int carry = 0;
     for (int i=(int)a.size()-1; i>=0; --i) {
         long long cur = a[i] + carry * 1ll * base;
